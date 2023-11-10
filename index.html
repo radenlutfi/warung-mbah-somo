@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warung Soto Mbah Somo</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="icon" type="images/logo" href="assets/images/logo1.png">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+   
+      <h1>
+        <a href="#" class="logo">Warung Mbah Somo<span class="span">.</span></a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="nav-item">
+            <a href="#home" class="navbar-link" data-nav-link>Beranda</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#about" class="navbar-link" data-nav-link>Tentang Kami</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#food-menu" class="navbar-link" data-nav-link>Daftar Menu</a>
+
+          <li class="nav-item">
+            <a href="#footer" class="navbar-link" data-nav-link>Kontak Kami</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-btn-group">
+        <button class="search-btn" aria-label="Search" data-search-btn>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-container>
+
+    <div class="search-box">
+      <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..."
+        class="search-input">
+
+      <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </div>
+
+    <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h2 class="h2 hero-title">Pengen makan Soto Daging tapi takut rasanya abal abal? Soto Daging Mbah Somo aja! </h2>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section section-divider gray about" id="about">
+        <div class="container">
+
+            <h2 class="h2 section-title">
+              Sejarah singkat
+              <span class="span">Warung Soto Mbah Somo</span>
+            </h2>
+
+            <p class="section-text">
+              Warung Soto Mbah Somo bediri sejak tahun 1950 atau usianya tahun ini 73 tahun. Sang pelopor yakni Mbah Somo Sarmin sendiri. Mbah Somo Biasa menjual soto pada sore hari menjelang malam dengan cara dipikul. Kebiasaan itu berhenti pada tahun 2007. Beliau wafat 2010, usahanya dilanjutkan oleh Bu Misri, anaknya. Dan sekarang sudah mempunyai lapak dagang soto yang berada di desa Tawangrejo, Takeran, Magetan, Jawa Timur. 
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Murah & Enak</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Makan di Tempat</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Makanan Halal 100%</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Dibawa Pulang</span>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FOOD MENU
+      -->
+
+      <section class="section food-menu" id="food-menu">
+        <div class="container">
+
+          <h2 class="h2 section-title"> Daftar Menu </h2>
+
+          <ul class="fiter-list">
+
+            <li>
+              <button class="filter-btn  active">All</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Makanan</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Minuman</button>
+            </li>
+
+          </ul>
+
+          <ul class="food-menu-list">
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/soto.png" width="300" height="300" loading="lazy"
+                    alt="Soto Daging" class="w-100">
+
+                  <button class="btn food-menu-btn">Order Sekarang</button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Makanan</p>
+
+                </div>
+
+                <h3 class="h3 card-title">Soto Daging</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Harga :</p>
+
+                  <data class="price">Rp. 10.000</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/esteh2.png" width="300" height="300" loading="lazy"
+                    alt="Es Teh" class="w-100">
+
+                  <button class="btn food-menu-btn">Order Sekarang</button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Minuman</p>
+
+                </div>
+
+                <h3 class="h3 card-title">Es Teh</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Harga :</p>
+
+                  <data class="price" value="Rp.3.000">Rp.3.000</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/esjeruk.png" width="300" height="300" loading="lazy"
+                    alt="Es Jeruk" class="w-100">
+
+                  <button class="btn food-menu-btn">Order Sekarang</button>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Minuman</p>
+
+                </div>
+
+                <h3 class="h3 card-title">Es Jeruk</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Harga :</p>
+
+                  <data class="price" value="Rp.3.000">Rp.3.000</data>
+
+                </div>
+
+              </div>
+            </li>
+
+          
+
+          </ul>
+
+
+        </div>
+      </section>
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer">
+
+    <div class="footer-top" style="background-image: url('./assets/images/footer-illustration.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="" class="logo">Warung Mbah Somo<span class="span">.</span></a>
+
+          <p class="footer-text">
+            Warung yang menyediakan makanan Soto Daging 
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://maps.app.goo.gl/BuPn6teg7xFsNYn89" class="social-link">
+                <ion-icon name="map"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://wa.me/6285790721377" class="social-link">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Info Lebih Lanjut</p>
+          </li>
+
+          <li>
+            <a href="mailto:lutfifadlu30@gmail.com" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+              <ion-label>Email : lutfifadlu30@gmail.com</ion-label>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Jam Buka</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Senin - Minggu : 09:00 - 14.00</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Jum'at : Libur</p>
+          </li>
+
+        </ul>
+
+      
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright-text">
+          &copy; 2023 <a href="#" class="copyright-link">lutfiFadlurrohman</a> All Rights Reserved.
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
